@@ -1,0 +1,293 @@
+@font-face{
+    font-family: "Open Sans"; /* Define una familia de fuentes personalizada llamada "Open Sans". */
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap') format('woff2'); /* Especifica la URL de la fuente y su formato. */
+    font-weight: 300; /* Establece el grosor de la fuente a 300. */
+    font-style: normal; /* Establece el estilo de la fuente a normal (no cursiva). */
+    font-variation-settings: "wdth" 100; /* Ajusta la variación de la fuente, en este caso, la anchura de los caracteres. */
+}
+
+*{
+    margin: 0; /* Elimina los márgenes externos de todos los elementos. */
+    padding: 0; /* Elimina el relleno interno de todos los elementos. */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto del elemento. */
+}
+
+body, html{
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal en todo el documento, evitando barras de desplazamiento horizontales. */
+}
+
+main{
+    margin-top: 95px; /* Añade un margen superior de 95px al elemento main. */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px al elemento main. */
+}
+
+.logo img{
+    margin-left: -300px; /* Desplaza la imagen del logo 300px a la izquierda. */
+    width: 100px; /* Establece el ancho de la imagen del logo a 100px. */
+}
+
+header{
+    background-color: #333; /* Establece el color de fondo del encabezado a un gris oscuro. */
+    color: #fff; /* Establece el color del texto del encabezado a blanco. */
+    position: fixed; /* Fija la posición del encabezado en la parte superior de la ventana. */
+    width: 100%; /* Establece el ancho del encabezado al 100% de la ventana. */
+    height: 60px; /* Establece la altura del encabezado a 60px. */
+    top: 0; /* Posiciona el encabezado en la parte superior de la ventana. */
+    left: 0; /* Posiciona el encabezado en el lado izquierdo de la ventana. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos del encabezado. */
+    align-items: center; /* Centra los elementos hijos verticalmente dentro del encabezado. */
+    padding: 55px; /* Añade un relleno de 55px alrededor del contenido del encabezado. */
+}
+
+hr{
+    height: 2px; /* Establece la altura de la línea horizontal a 2px. */
+    background: orange; /* Establece el color de la línea horizontal a naranja. */
+}
+
+h1{
+    white-space: nowrap; /* Evita que el texto dentro de h1 se envuelva en varias líneas. */
+}
+
+.metodos_contacto{
+    display: flex; /* Establece un contenedor flexible para los elementos hijos de .metodos_contacto. */
+    flex-direction: column; /* Organiza los elementos hijos de .metodos_contacto en una columna. */
+}
+
+.metodos_contacto_container{
+    background-color: gainsboro; /* Establece el color de fondo del contenedor de métodos de contacto a un gris claro. */
+    padding: 60px; /* Añade un relleno de 60px alrededor del contenido del contenedor de métodos de contacto. */
+    width: 100%; /* Establece el ancho del contenedor de métodos de contacto al 100% de su contenedor padre. */
+}
+
+.medios_contacto{
+    margin-left: 60px; /* Añade un margen izquierdo de 60px a .medios_contacto. */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos de .medios_contacto uniformemente. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos de .medios_contacto. */
+    margin-top: 20px; /* Añade un margen superior de 20px a .medios_contacto. */
+    flex-direction: column; /* Organiza los elementos hijos de .medios_contacto en una columna. */
+}
+
+.info_contacto {
+    display: flex; /* Establece un contenedor flexible para los elementos hijos de .info_contacto. */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos de .info_contacto uniformemente. */
+}
+
+.direccion, .hablemos, .correo {
+    flex: 1; /* Asigna a .direccion, .hablemos, y .correo la misma proporción del espacio disponible. */
+    margin: 40px; /* Añade un margen de 40px alrededor de .direccion, .hablemos, y .correo. */
+}
+
+.medios_contacto img{
+    width: 20px; /* Establece el ancho de las imágenes dentro de .medios_contacto a 20px. */
+    height: auto; /* La altura de las imágenes se ajusta automáticamente para mantener la proporción. */
+    margin-right: 5px; /* Añade un margen derecho de 5px a las imágenes. */
+}
+
+.medios_contacto h3{
+    font-size: 25px; /* Establece el tamaño de fuente de los elementos h3 dentro de .medios_contacto a 25px. */
+}
+
+.medios_contacto p{
+   margin: 0; /* Elimina todos los márgenes del elemento p. */
+}
+
+.correo h3 img {
+    width: 20px; /* Establece el ancho de las imágenes dentro de .correo h3 a 20px. */
+    vertical-align: middle; /* Alinea verticalmente las imágenes con el texto en .correo h3. */
+}
+
+.medios_contacto a{
+    text-decoration: none; /* Elimina el subrayado de los enlaces en .medios_contacto. */
+    color: inherit; /* Los enlaces en .medios_contacto heredan el color de texto de su elemento padre. */
+}
+
+.columna_contacto {
+    margin-top: 20px; /* Añade un margen superior de 20px a .columna_contacto. */
+    width: 50%; /* Establece el ancho de .columna_contacto al 50% de su contenedor padre. */
+    margin-left: 30px; /* Añade un margen izquierdo de 30px a .columna_contacto. */
+}
+
+.columna_contacto p{
+    white-space: nowrap; /* Evita que el texto dentro de p en .columna_contacto se envuelva en varias líneas. */
+}
+
+footer{
+    background-color: #333; /* Establece el color de fondo del pie de página a un gris oscuro. */
+    width: 100%; /* Establece el ancho del pie de página al 100% de su contenedor padre. */
+    flex-wrap: wrap; /* Permite que los elementos hijos del pie de página se envuelvan en líneas adicionales. */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior de la ventana. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos del pie de página. */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido del pie de página. */
+    color: white; /* Establece el color del texto del pie de página a blanco. */
+}
+
+footer img {
+    width: 20px; /* Establece el ancho de las imágenes dentro del footer a 20px. */
+    height: auto; /* La altura de las imágenes se ajusta automáticamente para mantener la proporción. */
+    margin-right: 5px; /* Añade un margen derecho de 5px a las imágenes. */
+}
+
+footer a {
+    color: #fff; /* Establece el color del texto de los enlaces en el footer a blanco. */
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+}
+
+footer h3 {
+    font-size: 20px; /* Establece el tamaño de fuente de los elementos h3 dentro del footer a 20px. */
+}
+
+.redes_sociales {
+    display: grid; /* Establece un contenedor de cuadrícula para los elementos dentro de .redes_sociales. */
+    grid-template-columns: repeat(5, 1fr); /* Crea cinco columnas de igual ancho. */
+    gap: 10px; /* Establece un espacio de 10px entre las celdas de la cuadrícula. */
+}
+.redes_sociales h3 {
+    grid-column: 1 / span 5; /* El elemento h3 ocupa las cinco columnas de la cuadrícula. */
+    margin-top: 15px; /* Añade un margen superior de 15px. */
+}
+.redes_sociales p {
+    margin: 0; /* Elimina todos los márgenes del párrafo. */
+    margin-top: 10px; /* Añade un margen superior de 10px. */
+}
+.redes_sociales img {
+    width: 25px; /* Establece el ancho de las imágenes a 25px. */
+    height: 25px; /* Establece la altura de las imágenes a 25px. */
+    margin-bottom: 115px; /* Añade un margen inferior de 115px. */
+}
+
+nav ul {
+    list-style: none; /* Elimina el estilo de lista predeterminado. */
+    margin: 0; /* Elimina los márgenes. */
+    padding: 0; /* Elimina el relleno. */
+}
+
+nav li a:hover {
+    background-color: #111; /* Cambia el color de fondo al pasar el ratón por encima. */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea. */
+    white-space: nowrap; /* Evita que el contenido se envuelva en la siguiente línea. */
+}
+
+nav ul li a {
+    color: #fff; /* Establece el color del texto a blanco. */
+    text-decoration: none; /* Elimina el subrayado del texto. */
+    padding: 10px 20px; /* Añade relleno alrededor del texto. */
+    border-radius: 20px; /* Redondea las esquinas del elemento. */
+    text-align: center; /* Centra el texto. */
+}
+
+.mapa_iframe {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre. */
+    border: 0; /* Elimina el borde. */
+}
+
+.footer_container {
+    display: flex; /* Usa un contenedor flexible. */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos. */
+}
+
+.metodos_contacto_container{
+    background-color: grey; /* Establece el color de fondo a gris. */
+    padding-left: 20px; /* Añade relleno a la izquierda. */
+}
+
+.metodos_contacto_container h2{
+    color: #fff; /* Establece el color del texto a blanco. */
+    text-align: left; /* Alinea el texto a la izquierda. */
+}
+
+.checkbox_container {
+    display: flex; /* Usa un contenedor flexible. */
+    align-items: center; /* Centra los elementos verticalmente. */
+}
+
+.checkbox_container input[type="checkbox"] {
+    margin-right: 10px; /* Añade un margen a la derecha. */
+    width: auto; /* Establece el ancho automáticamente. */
+}
+
+.checkbox_container label {
+    margin: 0; /* Elimina los márgenes. */
+}
+
+form input[type="submit"], form input[type="reset"]{
+    width: auto; /* Establece el ancho automáticamente. */
+    display: block; /* Muestra el elemento como un bloque. */
+    margin-right: auto; /* Alinea el elemento a la derecha automáticamente. */
+    margin-top: 5px; /* Añade un margen superior de 5px. */
+    border-radius: 40px; /* Redondea las esquinas del elemento. */
+    margin: 10px 0; /* Añade un margen superior e inferior de 10px. */
+    width: 100px; /* Establece el ancho a 100px. */
+}
+
+.form_container_contacto{
+    width: 100%; /* Establece el ancho al 100% del contenedor padre. */
+    max-width: 500px; /* Establece un ancho máximo de 500px. */
+}
+
+#mensaje {
+    height: 100px; /* Establece la altura a 100px. */
+}
+
+footer > p{ /*Selecciona todos los elementos <p> que son hijos directos de un elemento <footer>*/
+    text-align: center; /* Centra el texto. */
+}
+
+/* Las reglas @media establecen estilos específicos para diferentes tamaños de pantalla. */
+/* Las reglas @media sirven para aplicar estilos diferentes dependiendo del tamaño de la pantalla del dispositivo. Esto es útil para crear diseños que se vean bien en dispositivos móviles, tablets y ordenadores*/
+
+
+@media screen and (min-width: 480px) {
+    nav ul {
+        display: flex; /* Muestra los elementos de la lista en un contenedor flexible. */
+        justify-content: space-around; /* Distribuye los elementos de la lista uniformemente a lo largo del eje horizontal. */
+        list-style-type: none; /* Elimina los estilos de lista predeterminados como viñetas. */
+        padding: 0; /* Elimina el relleno interno de la lista. */
+    }
+    nav ul li a {
+        display: inline-block; /* Muestra los enlaces como bloques en línea, permitiendo propiedades de bloque. */
+        border-radius: 10px; /* Redondea las esquinas de los enlaces con un radio de 10px. */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Añade una sombra alrededor de los enlaces. */
+        padding: 10px 20px; /* Añade relleno alrededor de los enlaces. */
+        margin-right: 10px; /* Añade un margen a la derecha de los enlaces. */
+    }
+}
+
+/* Estilo para Móviles */
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        display: block; /* Muestra los enlaces como bloques, apilándolos verticalmente. */
+        width: 100%; /* Establece el ancho de los enlaces al 100% del contenedor padre. */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el cálculo del ancho y alto del elemento. */
+    }
+}
+
+/* CSS para Tablets */
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    * {
+        width: 100%; /* Establece el ancho de todos los elementos al 100% del contenedor padre. */
+        min-width: 480px; /* Establece un ancho mínimo de 480px para todos los elementos. */
+        margin: 0; /* Elimina los márgenes externos de todos los elementos. */
+        padding: 0; /* Elimina el relleno interno de todos los elementos. */
+    }
+}
+
+/* CSS para Móviles*/
+@media screen and (max-width: 480px) {
+    * {
+        width: 100%; /* Establece el ancho de todos los elementos al 100% del contenedor padre. */
+        margin: 0; /* Elimina los márgenes externos de todos los elementos. */
+        padding: 0; /* Elimina el relleno interno de todos los elementos. */
+    }
+}
+
+/* CSS para Ordenadores */
+@media screen and (min-width: 1024px) {
+    * {
+        width: 100%; /* Establece el ancho de todos los elementos al 100% del contenedor padre. */
+        margin: 0; /* Elimina los márgenes externos de todos los elementos. */
+        padding: 0; /* Elimina el relleno interno de todos los elementos. */
+    }
+}

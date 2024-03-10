@@ -1,0 +1,351 @@
+@font-face{
+    font-family: "Open Sans"; /* Esta regla define una fuente personalizada con el nombre "Open Sans". */
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap') format('woff2'); /* La URL desde donde se descarga la fuente y su formato. */
+    font-weight: 300; /* El grosor de la fuente, en este caso, 300. */
+    font-style: normal; /* El estilo de la fuente, aquí es normal, no cursiva ni oblicua. */
+    font-variation-settings: 'wdth' 100; /* Ajustes de variación de la fuente, 'wdth' 100 define la anchura de los caracteres. */
+}
+
+*{
+    margin: 0; /* Elimina los márgenes externos de todos los elementos. */
+    padding: 0; /* Elimina el relleno interno de todos los elementos. */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto del elemento. */
+}
+
+.img_portada img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor padre. */
+    height: 500px; /* Establece la altura de la imagen en 500 píxeles. */
+    margin-bottom: 50px; /* Añade un margen inferior de 50 píxeles. */
+}
+
+.informacion h2, h3{
+    text-align: center; /* Centra el texto de los elementos h2 y h3 dentro del contenedor .informacion. */
+}
+
+.informacion h2{
+    white-space: nowrap; /* Evita que el texto dentro de h2 se envuelva en varias líneas. */
+}
+
+main {
+    margin-top: 140px; /* Añade un margen superior de 140 píxeles al elemento main. */
+}
+
+.destinos_maravillosos{
+    margin: 20px; /* Añade un margen de 20px alrededor del elemento .destinos_maravillosos. */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido del elemento .destinos_maravillosos. */
+    border: 1px solid #ccc; /* Añade un borde sólido de 1px de color gris claro alrededor del elemento .destinos_maravillosos. */
+    border-radius: 10px; /* Redondea las esquinas del elemento .destinos_maravillosos con un radio de 10px. */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Añade una sombra ligera al elemento .destinos_maravillosos. */
+}
+
+
+.planificacion_viaje{
+    margin: 20px; /* Añade un margen de 20px alrededor del elemento .planificacion_viaje. */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido del elemento .planificacion_viaje */
+    border: 1px solid #ccc; /* Añade un borde sólido de 1px de color gris claro alrededor del elemento .planificacion_viaje. */
+    border-radius: 10px; /* Redondea las esquinas del elemento .planificacion_viaje con un radio de 10px. */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Añade una sombra ligera al elemento .planificacion_viaje. */
+}
+
+
+.experiencias_compartidas{
+    margin: 20px; /* Añade un margen de 20px alrededor del elemento .experiencias_compartidas. */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido del elemento .experiencias_compartidas. */
+    border: 1px solid #ccc; /* Añade un borde sólido de 1px de color gris claro alrededor del elemento .experiencias_compartidas. */
+    border-radius: 10px; /* Redondea las esquinas del elemento .experiencias_compartidas con un radio de 10px. */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Añade una sombra ligera al elemento .experiencias_compartidas. */
+}
+
+.consejos_viaje{
+    margin: 20px; /* Añade un margen de 20px alrededor del elemento .consejos_viaje. */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido del elemento .consejos_viaje. */
+    border: 1px solid #ccc; /* Añade un borde sólido de 1px de color gris claro alrededor del elemento .consejos_viaje. */
+    border-radius: 10px; /* Redondea las esquinas del elemento .consejos_viaje con un radio de 10px. */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Añade una sombra ligera al elemento .consejos_viaje. */
+}
+
+h1{
+    white-space: nowrap; /* Evita que el texto dentro de h1 se envuelva en varias líneas. */
+}
+
+.columna {
+    display: flex; /* Establece un contenedor flexible para los elementos hijos. */
+    flex-direction: column; /* Los elementos hijos se organizan en una columna. */
+    align-items: center; /* Centra los elementos hijos horizontalmente en el contenedor. */
+    text-align: center; /* Centra el texto de los elementos hijos. */
+}
+
+.columna p{
+    white-space: nowrap; /* Evita que el texto dentro de p se envuelva en varias líneas. */
+}
+
+.form_container {
+    width: 100%; /* Establece el ancho del contenedor del formulario al 100%. */
+    max-width: 350px; /* Establece un ancho máximo de 350 píxeles para el contenedor del formulario. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos del formulario. */
+    flex-direction: column; /* Los elementos hijos se organizan en una columna. */
+    align-items: center; /* Centra los elementos hijos horizontalmente en el contenedor. */
+}
+
+.form_container label{
+    text-align: start;
+}
+
+form input[type="submit"], form input[type="reset"]{
+    width: auto; /* El ancho del input se ajusta al contenido. */
+    display: block; /* El input se muestra como un bloque, ocupando toda la línea. */
+    margin-right: auto; /* El margen derecho se ajusta automáticamente. */
+    margin-top: 5px; /* Añade un margen superior de 5 píxeles. */
+    border-radius: 40px; /* Los bordes del input son redondeados con un radio de 40 píxeles. */
+    margin: 10px 0; /* Añade un margen vertical de 10 píxeles y horizontal de 0. */
+    width: 100px; /* Establece un ancho fijo de 100 píxeles para el input. */
+}
+
+.mapa iframe{
+    width:100%; /* El iframe del mapa ocupa el 100% del ancho de su contenedor padre. */
+    border:0; /* Elimina el borde del iframe. */
+}
+
+.logo img{
+    margin-left: -300px; /* Desplaza la imagen del logo 300 píxeles a la izquierda. */
+    width: 100px; /* Establece el ancho de la imagen del logo en 100 píxeles. */
+}
+
+.main_container {
+    max-width: none; /* No establece un ancho máximo para el contenedor principal. */
+    margin: 0 auto; /* Centra el contenedor principal horizontalmente. */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles. */
+    width: 100%; /* Establece el ancho del contenedor principal al 100%. */
+}
+
+.informacion h3{
+    color: #333; /* Establece el color del texto de los elementos h3 dentro de .informacion en un gris oscuro. */
+}
+
+header {
+    background-color: #333; /* Establece el color de fondo del encabezado en un gris oscuro. */
+    color: #fff; /* Establece el color del texto del encabezado en blanco. */
+    position: fixed; /* El encabezado se posiciona de forma fija en la ventana. */
+    width: 100%; /* El encabezado ocupa el 100% del ancho de la ventana. */
+    height: 60px; /* Establece la altura del encabezado en 60 píxeles. */
+    top: 0; /* Posiciona el encabezado en la parte superior de la ventana. */
+    left: 0; /* Posiciona el encabezado en el lado izquierdo de la ventana. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos del encabezado. */
+    align-items: center; /* Centra los elementos hijos verticalmente en el encabezado. */
+    padding: 55px; /* Añade un relleno de 55 píxeles alrededor del contenido del encabezado. */
+}
+
+footer{
+    background-color: #333; /* Establece el color de fondo del pie de página en un gris oscuro. */
+    flex-wrap: wrap; /* Permite que los elementos hijos del pie de página se envuelvan en líneas adicionales. */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior de la ventana. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos del pie de página. */
+    padding: 20px; /* Añade un relleno de 20 píxeles alrededor del contenido del pie de página. */
+    color: white; /* Establece el color del texto del pie de página en blanco. */
+    width: 100%; /* El pie de página ocupa el 100% del ancho de la ventana. */
+}
+
+
+
+footer img {
+    width: 20px; /* Establece el ancho de las imágenes dentro del footer a 20 píxeles. */
+    height: auto; /* La altura de las imágenes se ajusta automáticamente para mantener la proporción. */
+    margin-right: 5px; /* Añade un margen derecho de 5 píxeles a las imágenes. */
+}
+
+footer a {
+    color: #fff; /* Establece el color del texto de los enlaces en el footer a blanco. */
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+}
+
+footer h3 {
+    font-size: 20px; /* Establece el tamaño de fuente de los elementos h3 dentro del footer a 20 píxeles. */
+    text-align: start; /* Alinea el texto de los elementos h3 al inicio (izquierda). */
+}
+
+.redes-sociales {
+    display: grid; /* Establece un contenedor de cuadrícula para los elementos dentro de .redes-sociales. */
+    grid-template-columns: repeat(5, 1fr); /* Crea cinco columnas de igual ancho. */
+    gap: 10px; /* Establece un espacio de 10 píxeles entre las celdas de la cuadrícula. */
+    flex: 1; /* Permite que el contenedor .redes-sociales crezca para ocupar el espacio disponible en un contenedor flex. */
+}
+.redes-sociales h3 {
+    grid-column: 1 / span 5; /* Hace que el elemento h3 ocupe las cinco columnas de la cuadrícula. */
+    margin-top: 15px; /* Añade un margen superior de 15 píxeles al elemento h3. */
+}
+.redes-sociales p {
+    margin: 0; /* Elimina todos los márgenes del elemento p. */
+    margin-top: 10px; /* Añade un margen superior de 10 píxeles al elemento p. */
+}
+.redes-sociales img {
+    width: 25px; /* Establece el ancho de las imágenes dentro de .redes-sociales a 25 píxeles. */
+    height: 25px; /* Establece la altura de las imágenes a 25 píxeles. */
+    margin-bottom: 115px; /* Añade un margen inferior de 115 píxeles a las imágenes. */
+}
+
+nav ul {
+    list-style: none; /* Elimina los estilos de lista (puntos, números, etc.) de los elementos ul. */
+    margin: 0; /* Elimina el margen exterior de los elementos ul. */
+    padding: 0; /* Elimina el relleno interior de los elementos ul. */
+}
+
+nav li a:hover {
+    background-color: #111; /* Cambia el color de fondo de los enlaces al pasar el ratón por encima a un gris muy oscuro. */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos li en línea, uno al lado del otro. */
+    white-space: nowrap; /* Evita que el texto dentro de los elementos li se envuelva en varias líneas. */
+}
+
+nav ul li a {
+    color: #fff; /* Establece el color del texto de los enlaces a blanco. */
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+    padding: 10px 20px; /* Añade relleno alrededor de los enlaces para aumentar el área de clic. */
+    border-radius: 20px; /* Redondea las esquinas de los enlaces. */
+    text-align: center; /* Centra el texto dentro de los enlaces. */
+}
+
+.mapa_iframe {
+    width: 100%; /* Establece el ancho del iframe del mapa al 100% de su contenedor padre. */
+    border: 0; /* Elimina el borde del iframe. */
+}
+
+.footer_container {
+    display: flex; /* Establece un contenedor flexible para los elementos hijos de .footer_container. */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos de manera uniforme. */
+}
+
+footer > p{ /*Selecciona todos los elementos <p> que son hijos directos de un elemento <footer>*/
+    text-align: center; /* Centra el texto. */
+}
+
+.contacto, .redes-sociales {
+    flex: 1; /* Permite que los contenedores .contacto y .redes-sociales crezcan para ocupar el espacio disponible. */
+}
+
+.metodos_contacto_container{
+    text-align: right; /* Alinea el texto de .metodos_contacto_container a la derecha. */
+    background-color: grey; /* Establece el color de fondo de .metodos_contacto_container a gris. */
+    padding-left: 20px; /* Añade un relleno izquierdo de 20 píxeles. */
+}
+
+.metodos_contacto_container h2{
+    color: #fff; /* Establece el color del texto de los elementos h2 dentro de .metodos_contacto_container a blanco. */
+}
+
+.checkbox-container {
+    display: flex; /* Establece un contenedor flexible para los elementos hijos de .checkbox-container. */
+    align-items: center; /* Centra los elementos hijos verticalmente dentro de .checkbox-container. */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Añade un margen derecho de 10 píxeles a los inputs de tipo checkbox. */
+    width: auto; /* El ancho de los inputs de tipo checkbox se ajusta automáticamente. */
+}
+
+.checkbox-container label {
+    margin: 0; /* Elimina todos los márgenes del elemento label. */
+    white-space: nowrap; /* Evita que el texto dentro del elemento label se envuelva en varias líneas. */
+}
+
+/* Las reglas @media establecen estilos específicos para diferentes tamaños de pantalla. */
+/* Las reglas @media sirven para aplicar estilos diferentes dependiendo del tamaño de la pantalla del dispositivo. Esto es útil para crear diseños que se vean bien en dispositivos móviles, tablets y ordenadores*/
+
+@media (max-width: 480px) { 
+    .footer_container > div {
+      display: block; /* Los divs dentro de .footer_container se muestran como bloques, uno debajo del otro. */
+      width: 100%; /* Cada div ocupa el 100% del ancho disponible. */
+    }
+}
+
+@media screen and (min-width: 480px) {
+    nav ul {
+        display: flex; /* Los elementos ul dentro de nav se muestran como un contenedor flexible. */
+        justify-content: space-around; /* Los elementos li se distribuyen con espacio alrededor de ellos. */
+        list-style-type: none; /* Se elimina cualquier estilo de lista, como viñetas o números. */
+        padding: 0; /* Se elimina el relleno dentro de ul. */
+    }
+    nav ul li a {
+        display: inline-block; /* Los enlaces dentro de li se muestran en línea pero permiten propiedades de bloque. */
+        border-radius: 10px; /* Los enlaces tienen bordes redondeados con un radio de 10px. */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Los enlaces tienen una sombra de caja para dar un efecto 3D. */
+        padding: 10px 20px; /* Se añade relleno alrededor de los enlaces para aumentar el área de clic. */
+        margin-right: 10px; /* Se añade un margen a la derecha de cada enlace. */
+    }
+}
+ 
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        display: block; /* Los enlaces dentro de li se muestran como bloques, uno debajo del otro. */
+        width: 100%; /* Cada enlace ocupa el 100% del ancho disponible. */
+        box-sizing: border-box; /* El ancho y alto de los enlaces incluyen el contenido, relleno y borde. */
+    }
+}
+    
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    * {
+        width: 100%; /* Todos los elementos ocupan el 100% del ancho disponible. */
+        min-width: 480px; /* El ancho mínimo de todos los elementos es de 480px. */
+        margin: 0; /* Se elimina cualquier margen exterior de todos los elementos. */
+        padding: 0; /* Se elimina cualquier relleno interior de todos los elementos. */
+    }
+}
+    
+@media screen and (max-width: 480px) {
+    * {
+        width: 100%; /* Todos los elementos ocupan el 100% del ancho disponible. */
+        margin: 0; /* Se elimina cualquier margen exterior de todos los elementos. */
+        padding: 0; /* Se elimina cualquier relleno interior de todos los elementos. */
+    }
+}
+    
+@media screen and (min-width: 1024px) {
+    * {
+        width: 100%; /* Todos los elementos ocupan el 100% del ancho disponible. */
+        margin: 0; /* Se elimina cualquier margen exterior de todos los elementos. */
+        padding: 0; /* Se elimina cualquier relleno interior de todos los elementos. */
+    }
+}
+
+@media (min-width: 769px) {
+    .main_container {
+        display: flex; /* .main_container se muestra como un contenedor flexible. */
+        justify-content: space-between; /* Los elementos hijos se distribuyen con espacio entre ellos. */
+    }
+    .informacion, .columna {
+        width: 48%; /* .informacion y .columna ocupan el 48% del ancho disponible. */
+    }
+}
+
+.container {
+    width: 100%; /* .container ocupa el 100% del ancho disponible. */
+    max-width: 1000px; /* El ancho máximo de .container es de 1000px. */
+    padding: 0 15px; /* Se añade relleno a los lados de .container. */
+    box-sizing: border-box; /* El ancho y alto de .container incluyen el contenido, relleno y borde. */
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 700px; /* El ancho máximo de .container es de 700px cuando la pantalla es menor de 1024px. */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%; /* .container ocupa el 100% del ancho disponible cuando la pantalla es menor de 768px. */
+    }
+}
+
+@media (max-width: 768px) {
+    .main_container {
+        display: block; /* .main_container se muestra como un bloque, los elementos hijos uno debajo del otro. */
+    }
+    .informacion, .columna {
+        width: 100%; /* .informacion y .columna ocupan el 100% del ancho disponible. */
+    }
+}
+
+
+
+    

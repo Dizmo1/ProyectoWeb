@@ -1,0 +1,262 @@
+@font-face{
+    font-family: "Open Sans"; /* Define una familia de fuentes personalizada llamada "Open Sans". */
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap') format('woff2'); /* Especifica la URL de la fuente y su formato. */
+    font-weight: 300; /* Establece el grosor de la fuente a 300. */
+    font-style: normal; /* Establece el estilo de la fuente a normal (no cursiva). */
+    font-variation-settings: "wdth" 100; /* Ajusta la variación de la fuente, en este caso, la anchura de los caracteres. */
+}
+
+*{
+    margin: 0; /* Elimina los márgenes externos de todos los elementos. */
+    padding: 0; /* Elimina el relleno interno de todos los elementos. */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto del elemento. */
+}
+
+main{
+    margin-top: 140px; /* Añade un margen superior de 140px al elemento main. */
+}
+
+h1{
+    white-space: nowrap; /* Evita que el texto dentro de h1 se envuelva en varias líneas. */
+}
+
+.mapa iframe{
+    width: 100%; /* Establece el ancho del iframe del mapa al 100% de su contenedor padre. */
+    border: 0; /* Elimina el borde del iframe. */
+}
+
+.logo img{
+    margin-left: -300px; /* Desplaza la imagen del logo 300px a la izquierda. */
+    width: 100px; /* Establece el ancho de la imagen del logo a 100px. */
+}
+
+.container {
+    max-width: 1000px; /* Establece un ancho máximo de 1000px para el contenedor. */
+    margin: 0 auto; /* Centra el contenedor horizontalmente. */
+    padding: 0 20px; /* Añade un relleno de 20px a ambos lados del contenedor. */
+}
+
+.informacion h3{
+    color: #333; /* Establece el color del texto de los elementos h3 dentro de .informacion a un gris oscuro. */
+}
+
+header {
+    background-color: #333; /* Establece el color de fondo del encabezado a un gris oscuro. */
+    color: #fff; /* Establece el color del texto del encabezado a blanco. */
+    position: fixed; /* Fija la posición del encabezado en la parte superior de la ventana. */
+    width: 100%; /* Establece el ancho del encabezado al 100% de la ventana. */
+    height: 60px; /* Establece la altura del encabezado a 60px. */
+    top: 0; /* Posiciona el encabezado en la parte superior de la ventana. */
+    left: 0; /* Posiciona el encabezado en el lado izquierdo de la ventana. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos del encabezado. */
+    align-items: center; /* Centra los elementos hijos verticalmente dentro del encabezado. */
+    padding: 55px; /* Añade un relleno de 55px alrededor del contenido del encabezado. */
+}
+
+main {
+    margin: 0 auto; /* Centra el elemento main horizontalmente. */
+    width: 80%; /* Establece el ancho del main al 80% del ancho de su contenedor padre. */
+    font-size: 18px; /* Establece el tamaño de fuente del texto dentro de main a 18px. */
+}
+
+main section {
+    margin-bottom: 30px; /* Añade un margen inferior de 30px a cada sección dentro de main. */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido de cada sección. */
+    background-color: #f4f4f4; /* Establece el color de fondo de cada sección a un gris claro. */
+    border-radius: 5px; /* Redondea las esquinas de cada sección con un radio de 5px. */
+}
+main section:first-child {
+    padding-top: 120px; /* Añade un relleno superior de 120px a la primera sección dentro de main. */
+}
+
+main h2 {
+    color: #35424a; /* Establece el color del texto de los elementos h2 dentro de main a un azul grisáceo. */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px a los elementos h2. */
+}
+
+main p {
+    line-height: 1.6; /* Establece la altura de línea del texto dentro de los párrafos a 1.6, mejorando la legibilidad. */
+}
+
+main ul {
+    list-style-type: none; /* Elimina los estilos de lista (puntos, números, etc.) de los elementos ul. */
+    padding: 0; /* Elimina el relleno interior de los elementos ul. */
+}
+
+main ul li:before {
+    content: '✔'; /* Añade un símbolo de verificación antes de cada elemento li. */
+    margin-right: 5px; /* Añade un margen derecho de 5px al símbolo de verificación. */
+}
+
+main blockquote {
+    border-left: 5px solid #35424a; /* Añade un borde izquierdo sólido de 5px de color azul grisáceo a los blockquotes. */
+    margin: 20px 0; /* Añade márgenes superior e inferior de 20px a los blockquotes. */
+    padding-left: 15px; /* Añade un relleno izquierdo de 15px a los blockquotes. */
+}
+
+main blockquote p {
+    margin: 0; /* Elimina los márgenes externos de los párrafos dentro de los blockquotes. */
+}
+
+main blockquote footer {
+    text-align: right; /* Alinea el texto del footer de los blockquotes a la derecha. */
+    color: #888; /* Establece el color del texto a un gris claro. */
+}
+
+.staff img{
+    width: 100px; /* Establece el ancho de las imágenes dentro de .staff a 100px. */
+    height: auto; /* La altura de las imágenes se ajusta automáticamente para mantener la proporción. */
+}
+
+footer{
+    background-color: #333; /* Establece el color de fondo del pie de página a un gris oscuro. */
+    width: 100%; /* Establece el ancho del pie de página al 100% de su contenedor padre. */
+    flex-wrap: wrap; /* Permite que los elementos hijos del pie de página se envuelvan en líneas adicionales. */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior de la ventana. */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos del pie de página. */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido del pie de página. */
+    color: white; /* Establece el color del texto del pie de página a blanco. */
+}
+
+footer img {
+    width: 20px; /* Establece el ancho de las imágenes dentro del footer a 20px. */
+    height: auto; /* La altura de las imágenes se ajusta automáticamente para mantener la proporción. */
+    margin-right: 5px; /* Añade un margen derecho de 5px a las imágenes. */
+}
+
+footer a {
+    color: #fff; /* Establece el color del texto de los enlaces en el footer a blanco. */
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+}
+
+footer h3 {
+    font-size: 20px; /* Establece el tamaño de fuente de los elementos h3 dentro del footer a 20px. */
+}
+
+.redes-sociales {
+    display: grid; /* Establece un contenedor de cuadrícula para los elementos dentro de .redes-sociales. */
+    grid-template-columns: repeat(5, 1fr); /* Crea cinco columnas de igual ancho. */
+    gap: 10px; /* Establece un espacio de 10px entre las celdas de la cuadrícula. */
+}
+.redes-sociales h3 {
+    grid-column: 1 / span 5; /* Hace que el elemento h3 ocupe las cinco columnas de la cuadrícula. */
+    margin-top: 15px; /* Añade un margen superior de 15px al elemento h3. */
+}
+.redes-sociales p {
+    margin: 0; /* Elimina todos los márgenes del elemento p. */
+    margin-top: 10px; /* Añade un margen superior de 10px al elemento p. */
+}
+.redes-sociales img {
+    width: 25px; /* Establece el ancho de las imágenes en .redes-sociales a 25 píxeles. */
+    height: 25px; /* Establece la altura de las imágenes en .redes-sociales a 25 píxeles. */
+    margin-bottom: 115px; /* Añade un margen inferior de 115 píxeles a las imágenes en .redes-sociales. */
+}
+
+nav ul {
+    list-style: none; /* Elimina los estilos de lista (puntos, números, etc.) de los elementos ul en nav. */
+    margin: 0; /* Elimina los márgenes externos de los elementos ul en nav. */
+    padding: 0; /* Elimina el relleno interno de los elementos ul en nav. */
+}
+
+nav li a:hover {
+    background-color: #111; /* Cambia el color de fondo de los enlaces en nav li al pasar el ratón por encima a un gris muy oscuro. */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos li en nav ul en línea, uno al lado del otro. */
+    white-space: nowrap; /* Evita que el texto dentro de los elementos li en nav ul se envuelva en varias líneas. */
+}
+
+nav ul li a {
+    color: #fff; /* Establece el color del texto de los enlaces en nav ul li a blanco. */
+    text-decoration: none; /* Elimina el subrayado de los enlaces en nav ul li. */
+    padding: 10px 20px; /* Añade relleno alrededor de los enlaces en nav ul li para aumentar el área de clic. */
+    border-radius: 20px; /* Redondea las esquinas de los enlaces en nav ul li. */
+    text-align: center; /* Centra el texto dentro de los enlaces en nav ul li. */
+}
+
+.mapa_iframe {
+    width: 100%; /* Establece el ancho del iframe del mapa al 100% de su contenedor padre. */
+    border: 0; /* Elimina el borde del iframe del mapa. */
+}
+
+.footer_container {
+    display: flex; /* Establece un contenedor flexible para los elementos hijos de .footer_container. */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos de .footer_container de manera uniforme. */
+}
+
+footer > p{ /*Selecciona todos los elementos <p> que son hijos directos de un elemento <footer>*/
+    text-align: center; /* Centra el texto. */
+}
+
+.metodos_contacto_container{
+    text-align: right; /* Alinea el texto de .metodos_contacto_container a la derecha. */
+    background-color: grey; /* Establece el color de fondo de .metodos_contacto_container a gris. */
+    padding-left: 20px; /* Añade un relleno izquierdo de 20 píxeles a .metodos_contacto_container. */
+}
+
+.metodos_contacto_container h2{
+    color: #fff; /* Establece el color del texto de los elementos h2 dentro de .metodos_contacto_container a blanco. */
+}
+
+/* Las reglas @media establecen estilos específicos para diferentes tamaños de pantalla. */
+/* Las reglas @media sirven para aplicar estilos diferentes dependiendo del tamaño de la pantalla del dispositivo. Esto es útil para crear diseños que se vean bien en dispositivos móviles, tablets y ordenadores*/
+
+
+
+@media screen and (min-width: 480px) {
+    nav ul {
+        display: flex; /* Los elementos ul dentro de nav se muestran como un contenedor flexible. */
+        justify-content: space-around; /* Los elementos li se distribuyen con espacio alrededor de ellos. */
+        list-style-type: none; /* Se elimina cualquier estilo de lista, como viñetas o números. */
+        padding: 0; /* Se elimina el relleno dentro de ul. */
+    }
+    nav ul li a {
+        display: inline-block; /* Los enlaces dentro de li se muestran en línea pero permiten propiedades de bloque. */
+        border-radius: 10px; /* Los enlaces tienen bordes redondeados con un radio de 10px. */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Los enlaces tienen una sombra de caja para dar un efecto 3D. */
+        padding: 10px 20px; /* Se añade relleno alrededor de los enlaces para aumentar el área de clic. */
+        margin-right: 10px; /* Se añade un margen a la derecha de cada enlace. */
+    }
+}
+
+/* Estilo para Móviles */
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        display: block; /* Los enlaces dentro de li se muestran como bloques, uno debajo del otro. */
+        width: 100%; /* Cada enlace ocupa el 100% del ancho disponible. */
+        box-sizing: border-box; /* El ancho y alto de los enlaces incluyen el contenido, relleno y borde. */
+    }
+}
+
+/* CSS para Tablets */
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    * {
+        width: 100%; /* Todos los elementos ocupan el 100% del ancho disponible. */
+        min-width: 480px; /* El ancho mínimo de todos los elementos es de 480px. */
+        margin: 0; /* Se elimina cualquier margen exterior de todos los elementos. */
+        padding: 0; /* Se elimina cualquier relleno interior de todos los elementos. */
+    }
+}
+
+/* CSS para Móviles */
+@media screen and (max-width: 480px) {
+    * {
+        width: 100%; /* Todos los elementos ocupan el 100% del ancho disponible. */
+        margin: 0; /* Se elimina cualquier margen exterior de todos los elementos. */
+        padding: 0; /* Se elimina cualquier relleno interior de todos los elementos. */
+    }
+}
+
+/* CSS para Ordenadores */
+@media screen and (min-width: 1024px) {
+    * {
+        width: 100%; /* Todos los elementos ocupan el 100% del ancho disponible. */
+        margin: 0; /* Se elimina cualquier margen exterior de todos los elementos. */
+        padding: 0; /* Se elimina cualquier relleno interior de todos los elementos. */
+    }
+}
+
+
+
+    
